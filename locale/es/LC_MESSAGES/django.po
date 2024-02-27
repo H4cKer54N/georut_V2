@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-26 16:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: Users/views.py:13
+msgid "login_title"
+msgstr "Iniciar Sesión"
+
+#: georut/settings.py:107
+msgid "Español"
+msgstr "Español"
+
+#: georut/settings.py:108
+msgid "Italian"
+msgstr "Italiano"
+
+#: georut/settings.py:109
+msgid "English"
+msgstr "Ingles"
+
+#: globalconfig/models.py:7
+msgid "name_of_company"
+msgstr "Nombre de la app"
+
+#: globalconfig/models.py:8
+msgid "logo_of_company"
+msgstr "Logo de la app"
+
+#: globalconfig/models.py:10
+msgid "number_of_company"
+msgstr "Identificador para documentos"
+
+#: globalconfig/models.py:11
+msgid "name_of_documents"
+msgstr "Nombre para documentos"
+
+#: globalconfig/models.py:12
+msgid "logo_of_documents"
+msgstr "Logo para documentos"
+
+#: globalconfig/models.py:13
+msgid "address_of_company"
+msgstr "Dirección para documentos"
+
+#: globalconfig/models.py:14
+msgid "phone_of_company"
+msgstr "Teléfono para documentos"
+
+#: globalconfig/models.py:15
+msgid "email_of_company"
+msgstr "Email para documentos"
+
+#: globalconfig/models.py:16
+msgid "web_of_company"
+msgstr "Web para documentos"
+
+#: templates/login.html:23
+msgid "subtitle_login"
+msgstr "Inicia sesión para comenzar"
+
+#: templates/login.html:27
+msgid "username"
+msgstr "Nombre de usuario"
+
+#: templates/login.html:35
+msgid "password"
+msgstr "Contraseña"
+
+#: templates/login.html:47
+msgid "remember_me"
+msgstr "Recuerdame"
+
+#: templates/login.html:53
+msgid "sign_in"
+msgstr "Ingresar"
+
+#: templates/login.html:59
+msgid "forgot_password"
+msgstr "¡Olvide mi password!"

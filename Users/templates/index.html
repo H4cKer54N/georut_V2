@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post" action="">
+    {% csrf_token %}
+    {{ group_form.as_p }}
+    {{ permission_form.as_p }}
+    <button type="submit">Guardar Grupo</button>
+  </form>
+{% endblock %}

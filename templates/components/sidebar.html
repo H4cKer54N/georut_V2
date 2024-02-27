@@ -1,0 +1,57 @@
+{% load static %}
+{% load i18n %}
+{% load templates_tags %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4 sidebar-no-expand">
+    <!-- Brand Logo -->
+    {% if LOGO %}
+    <a href="{% url "home" %}" class="brand-link">
+      <img src="{{LOGO}}" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-weight">{{NAME}}</span>
+    {% else %}
+      <a href="{% url "home" %}" class="brand-link text-center">
+      <span class="brand-text font-weight-bold h3">{{NAME}}</span>
+    {% endif %}
+    </a>
+
+    <div class="sidebar">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          {% if request.user.image %}
+            <img src="{{request.user.image.url}}" class="img-circle elevation-2" alt="{{request.user.get_full_name}}">
+          {% else %}
+            <img src="{% static 'commons/no_user_image.svg' %}" class="img-circle elevation-2" alt="{{request.user.get_full_name}}">
+          {% endif %}
+        </div>
+        <div class="info">
+          <a href="{% url "Users:update_user" %}" class="d-block">{{request.user.get_full_name}}</a>
+        </div>
+      </div>
+
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="{% url "home" %}" class="nav-link {% if request.path|delete_slash  == LANGUAGE_CODE %}active{% endif %}">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link {% if "article" in request.path %}active{% endif %}">
+              <i class="nav-icon fas fa-barcode"></i>
+              <p>
+                Articulos
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+</aside>

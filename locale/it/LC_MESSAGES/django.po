@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-26 16:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Users/views.py:13
+msgid "login_title"
+msgstr "Login"
+
+#: georut/settings.py:107
+msgid "Español"
+msgstr "Spagnolo"
+
+#: georut/settings.py:108
+msgid "Italian"
+msgstr "Italiano"
+
+#: georut/settings.py:109
+msgid "English"
+msgstr "Inglese"
+
+#: globalconfig/models.py:7
+msgid "name_of_company"
+msgstr "Nome sull'app"
+
+#: globalconfig/models.py:8
+msgid "logo_of_company"
+msgstr "Logo sull'app"
+
+#: globalconfig/models.py:10
+msgid "number_of_company"
+msgstr "Numero per documenti"
+
+#: globalconfig/models.py:11
+msgid "name_of_documents"
+msgstr "Nome per documenti"
+
+#: globalconfig/models.py:12
+msgid "logo_of_documents"
+msgstr "Logo per documenti"
+
+#: globalconfig/models.py:13
+msgid "address_of_company"
+msgstr "Indirizzo per documenti"
+
+#: globalconfig/models.py:14
+msgid "phone_of_company"
+msgstr "Telefono per documenti"
+
+#: globalconfig/models.py:15
+msgid "email_of_company"
+msgstr "Email per documenti"
+
+#: globalconfig/models.py:16
+msgid "web_of_company"
+msgstr "Web per documenti"
+
+#: templates/login.html:23
+msgid "subtitle_login"
+msgstr "Accedi per iniziare la tua sessione"
+
+#: templates/login.html:27
+msgid "username"
+msgstr "Nome utente"
+
+#: templates/login.html:35
+msgid "password"
+msgstr "Password"
+
+#: templates/login.html:47
+msgid "remember_me"
+msgstr "Ricordami"
+
+#: templates/login.html:53
+msgid "sign_in"
+msgstr "Accedi"
+
+#: templates/login.html:59
+msgid "forgot_password"
+msgstr "Password dimenticata"
