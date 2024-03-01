@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+Error 404
+{% endblock title %}
+
+{% block content %}
+
+<div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Error 404</h1>
+            <h2 class="text-center text-danger">{% trans "Page not found or not available for this user" %}</h2>
+        </div>
+    </div>
+</div>
+{% endblock content %}

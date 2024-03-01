@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 16:46+0100\n"
+"POT-Creation-Date: 2024-02-29 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,78 +19,275 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: Users/views.py:13
-msgid "login_title"
-msgstr "Iniciar Sesión"
+#: Users/forms.py:11 templates/login.html:64
+msgid "Remember me"
+msgstr "Recuerdame"
 
-#: georut/settings.py:107
+#: Users/forms.py:18
+msgid ""
+"Please enter a correct username and password. Note that both fields may be "
+"case-sensitive."
+msgstr ""
+"Por favor ingrese usuario y Contraseña correctos. Note que ambos campos son "
+"sensibles a mayusculas y minusculas."
+
+#: Users/forms.py:19
+msgid "This account is inactive."
+msgstr "Esta cuenta esta inactiva"
+
+#: Users/models.py:10
+msgid "Created at"
+msgstr "Creado el"
+
+#: Users/models.py:11
+msgid "Created by"
+msgstr "Creado por"
+
+#: Users/models.py:19
+msgid "Birthdate"
+msgstr "Fecha de nacimiento"
+
+#: Users/models.py:20
+msgid "Phone"
+msgstr "Teléfono"
+
+#: Users/models.py:21
+msgid "Address"
+msgstr "Dirección"
+
+#: Users/models.py:22
+msgid "City"
+msgstr "Ciudad"
+
+#: Users/models.py:23
+msgid "Image"
+msgstr "Imagen"
+
+#: Users/models.py:24
+msgid "Ip"
+msgstr "Ip"
+
+#: Users/models.py:28
+#, fuzzy
+#| msgid "groups"
+msgid "Groups"
+msgstr "grupos"
+
+#: Users/models.py:30
+msgid ""
+"The groups this user belongs to. A user will get all permissions granted to "
+"each of their groups."
+msgstr ""
+"Los grupos que tiene asociado este usuario. Un usuario obtendra todos los "
+"permisos que tenga asociado el grupo."
+
+#: Users/models.py:35
+#, fuzzy
+#| msgid "user permissions"
+msgid "User permissions"
+msgstr "permisos de usuario"
+
+#: Users/models.py:37
+msgid "Specific permissions for this user."
+msgstr "Permisos especificos para este usuario"
+
+#: Users/models.py:41
+msgid "user"
+msgstr "usuario"
+
+#: Users/models.py:42
+msgid "users"
+msgstr "Usuarios"
+
+#: Users/models.py:46
+msgid "Can view user"
+msgstr "Ver usuarios"
+
+#: Users/models.py:47
+msgid "Can change user"
+msgstr "Modificar usuarios"
+
+#: Users/models.py:48
+msgid "Can delete user"
+msgstr "Eliminar usuarios"
+
+#: Users/models.py:49
+msgid "Can add user"
+msgstr "Agregar usuarios"
+
+#: Users/views.py:29
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: Users/views.py:51
+msgid "Invalid username or password"
+msgstr "Usuario o Contraseña incorrectos"
+
+#: Users/views.py:62 templates/components/navbar.html:45
+msgid "Update user"
+msgstr "Actualizar usuarios"
+
+#: Users/views.py:93
+#, fuzzy
+#| msgid "user permissions"
+msgid "Groups and permissions"
+msgstr "permisos de usuario"
+
+#: georut/settings.py:129
 msgid "Español"
 msgstr "Español"
 
-#: georut/settings.py:108
+#: georut/settings.py:130
 msgid "Italian"
 msgstr "Italiano"
 
-#: georut/settings.py:109
+#: georut/settings.py:131
 msgid "English"
 msgstr "Ingles"
 
-#: globalconfig/models.py:7
-msgid "name_of_company"
-msgstr "Nombre de la app"
-
 #: globalconfig/models.py:8
-msgid "logo_of_company"
-msgstr "Logo de la app"
+msgid "Company name to show on app"
+msgstr "Nombre de la compañia para mostrar en la app"
 
-#: globalconfig/models.py:10
-msgid "number_of_company"
-msgstr "Identificador para documentos"
+#: globalconfig/models.py:9
+msgid "Logo of company to show on app"
+msgstr "Logo de la compañia para mostrar en la app"
 
 #: globalconfig/models.py:11
-msgid "name_of_documents"
-msgstr "Nombre para documentos"
+msgid "Id of company"
+msgstr "Identificador de la compañia"
 
 #: globalconfig/models.py:12
-msgid "logo_of_documents"
-msgstr "Logo para documentos"
+msgid "Company name to show on documents"
+msgstr "Nombre de la compañia para mostrar en los documentos"
 
 #: globalconfig/models.py:13
-msgid "address_of_company"
-msgstr "Dirección para documentos"
+msgid "Company logo to show on documents"
+msgstr "Logo de la compañia para mostrar en los documentos"
 
 #: globalconfig/models.py:14
-msgid "phone_of_company"
-msgstr "Teléfono para documentos"
+msgid "Company address to show on documents"
+msgstr "Dirección de la compañia para mostrar en los documentos"
 
 #: globalconfig/models.py:15
-msgid "email_of_company"
-msgstr "Email para documentos"
+msgid "Company phone to show on documents"
+msgstr "Teléfono de la compañia para mostrar en los documentos"
 
 #: globalconfig/models.py:16
-msgid "web_of_company"
-msgstr "Web para documentos"
+msgid "Company email to show on documents"
+msgstr "Email de la compañia para mostrar en los documentos"
 
-#: templates/login.html:23
-msgid "subtitle_login"
+#: globalconfig/models.py:17
+msgid "Company web to show on documents"
+msgstr "Web de la compañia para mostrar en los documentos"
+
+#: globalconfig/models.py:21
+msgid "Global config"
+msgstr "Configuracion global"
+
+#: globalconfig/models.py:22
+msgid "Global Configs"
+msgstr "Configuraciones Globales"
+
+#: globalconfig/models.py:25
+msgid "Can view global conf"
+msgstr "Ver configuración global"
+
+#: globalconfig/models.py:26
+msgid "Can change global conf"
+msgstr "Cambiar configuración global"
+
+#: globalconfig/models.py:27
+msgid "Can delete global conf"
+msgstr "Borrar configuración global"
+
+#: globalconfig/models.py:28
+msgid "Can add global conf"
+msgstr "Agregar configuración global"
+
+#: index/views.py:11 templates/base.html:42
+#: templates/components/sidebar.html:35
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/components/footer.html:4
+msgid "All rights reserved"
+msgstr "Todos los derechos reservados."
+
+#: templates/components/navbar.html:17
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: templates/components/navbar.html:34
+msgid "See all notifications"
+msgstr "Ver todas las notificaciones"
+
+#: templates/components/navbar.html:48
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/components/navbar.html:50
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: templates/components/sidebar.html:47
+msgid "Articles"
+msgstr "Artículos"
+
+#: templates/components/sidebar.html:59
+msgid "Clients"
+msgstr "Clientes"
+
+#: templates/components/sidebar.html:71
+msgid "Category"
+msgstr "Categorias"
+
+#: templates/components/sidebar.html:83
+msgid "Iva"
+msgstr "Iva"
+
+#: templates/components/sidebar.html:95
+msgid "Warehouse"
+msgstr "Inventario"
+
+#: templates/components/sidebar.html:107
+msgid "Routes"
+msgstr "Rutas"
+
+#: templates/components/sidebar.html:119
+msgid "Users"
+msgstr "Usuarios"
+
+#: templates/components/sidebar.html:131
+msgid "Vehicles"
+msgstr "Vehículos"
+
+#: templates/components/sidebar.html:146
+#, fuzzy
+#| msgid "user permissions"
+msgid "Groups and Permissions"
+msgstr "permisos de usuario"
+
+#: templates/login.html:31
+msgid "Sign in to start your session"
 msgstr "Inicia sesión para comenzar"
 
-#: templates/login.html:27
-msgid "username"
+#: templates/login.html:36
+msgid "Attention"
+msgstr "Atención"
+
+#: templates/login.html:45
+msgid "Username"
 msgstr "Nombre de usuario"
 
-#: templates/login.html:35
-msgid "password"
+#: templates/login.html:53
+msgid "Password"
 msgstr "Contraseña"
 
-#: templates/login.html:47
-msgid "remember_me"
-msgstr "Recuerdame"
+#: templates/login.html:69
+msgid "Sign in"
+msgstr "Iniciar sesión"
 
-#: templates/login.html:53
-msgid "sign_in"
-msgstr "Ingresar"
-
-#: templates/login.html:59
-msgid "forgot_password"
-msgstr "¡Olvide mi password!"
+#: templates/login.html:75
+msgid "I forgot my password"
+msgstr "¿Olvide mi contraseña?"

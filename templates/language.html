@@ -1,7 +1,6 @@
 {% load static %}
 {% load i18n %}
 {% get_current_language as LANGUAGE_CODE %}
-
 <div class="dropdown">
     <button class="btn btn-lg rounded-circle dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src="{% static 'flags/' %}{{LANGUAGE_CODE}}.svg" class="rounded-circle" alt="">
@@ -16,7 +15,7 @@
             <input type="hidden" name="language" value="{{ language.code }}">
             <button type="submit" class="dropdown-item">
                 <img src="{% static 'flags/' %}{{language.code}}.svg" style="width: 30px; height: 30px;" class="rounded-circle mr-2" alt="">
-                <b>{% trans language.name %}</b>
+                {% trans language.name %}
             </button>
         </form>
     {% endfor %}

@@ -17,7 +17,4 @@ def context_configuration(request):
         'PHONE': config.phone,
         'EMAIL': config.email,
         'WEB': config.web,
-        
     }
-
-    

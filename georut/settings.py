@@ -11,8 +11,7 @@ DEBUG = True
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = ['georut.com', 'www.georut.com']
-
+    ALLOWED_HOSTS = ['georut.com', 'www.georut.com','localhost']
 
 # Application definition
 
@@ -23,7 +22,6 @@ INITIAL_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles'
-
 ]
 
 THIRD_PARTY_APPS = [
@@ -39,9 +37,9 @@ CREATED_APPS = [
     # 'Orders',
     'Users',
     'index',  # app para la página de inicio
+    'globalconfig',  # app para configuración global
     # 'Vehicles',
     # 'Warehouse',
-    'globalconfig',  # app para configuración global
 
 ]
 INSTALLED_APPS = INITIAL_APPS + THIRD_PARTY_APPS + CREATED_APPS
@@ -125,6 +123,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+AUTH_GROUP_MODEL = 'Users.CustomGroup'
+
+
 LANGUAGES = (
     ('es', _('Español')),
     ('it', _('Italian')),
@@ -142,9 +143,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'login'
-LOGIN_URL = 'login'
-LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'Users:login'
+LOGIN_URL = 'Users:login'
 
 AXES_FAILURE_LIMIT = 10
 AXES_COOLOFF_TIME = .10
@@ -152,3 +152,4 @@ AXES_LOCK_OUT_AT_FAILURE = True
 
 AUTH_USER_MODEL = "Users.User"
 SIMPLE_HISTORY_ENFORCE_HISTORY_MODEL_PERMISSIONS = True
+
