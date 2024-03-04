@@ -2,11 +2,11 @@
 {% load i18n %}
 
 {% block title %}
-{{NAME}} | Error 404
+{{NAME}} | Error 403
 {% endblock title %}
 {% block text %}
-{% trans "Page not found or not available for this user" %}
+{% trans "Sorry, you don't have permission to make this request" %}
 {% endblock text %}
 {% block errornumber %}
-404
+403
 {% endblock errornumber %}

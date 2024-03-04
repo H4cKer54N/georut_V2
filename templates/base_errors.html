@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'AdminLTE/plugins/fontawesome-free/css/all.min.css' %} " />
+
+    <style>
+        .bg-text {
+            color:#eee;
+            font-size:20em;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Reduce font size on smaller screens */
+        @media (max-width: 768px) {
+            .bg-text {
+                font-size: 10em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="vh-100 d-flex justify-content-center align-items-center position-relative">
+        <div class="text-center position-relative">
+            <h2 class="text-danger">{%block text%}{% endblock %}</h2>
+            <button onclick="window.history.back()" class="btn btn-secondary"> <i class="fa fa-chevron-left"></i> Torna</button>
+        </div>
+        <div class="bg-text">{% block errornumber %}{% endblock errornumber %}</div>
+    </div>
+</body>
+</html>

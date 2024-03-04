@@ -8,8 +8,8 @@ class GlobalConfig(models.Model):
     name = models.CharField(max_length=100,null=True,blank=True, verbose_name=_('Company name to show on app'), default='Georut')
     logo = models.ImageField(upload_to='logos', null=True, blank=True, verbose_name=_('Logo of company to show on app'))
     
-    number = models.CharField(max_length=20, null=True, blank=True, verbose_name=_('Id of company'))
     name_documents = models.CharField(max_length=100, verbose_name=_('Company name to show on documents'))
+    number = models.CharField(max_length=20, null=True, blank=True, verbose_name=_('Id of company'))
     logo_documents = models.ImageField(upload_to='logos', null=True, blank=True, verbose_name=_('Company logo to show on documents'))
     address = models.CharField(max_length=255,  null=True, blank=True, verbose_name=_('Company address to show on documents'))
     phone = models.CharField(max_length=20, null=True, blank=True, verbose_name=_('Company phone to show on documents'))

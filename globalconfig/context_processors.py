@@ -9,10 +9,10 @@ def context_configuration(request):
 
     return {
         'NAME': config.name,
-        'LOGO': config.logo,
+        'LOGO': config.logo.url if config.logo else None,
         'NUMBER': config.number,
         'NAME_DOCUMENTS': config.name_documents,
-        'LOGO_DOCUMENTS': config.logo_documents,
+        'LOGO_DOCUMENTS': config.logo_documents.url if config.logo_documents else None,
         'ADRESS': config.address,
         'PHONE': config.phone,
         'EMAIL': config.email,
